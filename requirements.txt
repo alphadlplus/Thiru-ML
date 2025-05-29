@@ -43,3 +43,4 @@ uvloop
 xattr
 yt-dlp==2023.10.07
 cloudscraper
+pytz==2024.1
