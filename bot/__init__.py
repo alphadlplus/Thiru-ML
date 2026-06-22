@@ -17,9 +17,12 @@ from faulthandler import enable as faulthandler_enable
 from socket import setdefaulttimeout
 from logging import getLogger, Formatter, FileHandler, StreamHandler, INFO, basicConfig, error as log_error, info as log_info, warning as log_warning
 from uvloop import install
+import asyncio
 
 faulthandler_enable()
+
 install()
+asyncio.set_event_loop(asyncio.new_event_loop())
 setdefaulttimeout(600)
 
 botStartTime = time()
